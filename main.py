@@ -51,19 +51,20 @@ with open('verification', 'r') as r:
 #reading list of devices
 with open('device-list.txt', 'r') as f:
     devices = f.read().splitlines()
+print(f'log is being saved in {logfilename}')
 #checking if configuration required
 print('Checking if Configuration command available...')
 isConfigRequired = os.stat('config').st_size!=0
 if(isConfigRequired):
     with open('config','r') as conf:
-        config_cmd = conf.read()
+        config_cmd = conf.readlines()
     print('Below Configuration command found:')
     print('**'*50)
     print(config_cmd)
     print('**'*50)
     print('Configuration will start in 3 seconds.')
     print('Exit and make the changes if above command is not to be configured.')
-    #time.sleep(3)
+    time.sleep(3)
     print('\nStarting the Configuration now...\n')
     # connecting devices individually
     for ip in devices:

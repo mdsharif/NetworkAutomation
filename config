@@ -1,0 +1,3 @@
+int loo 0
+ip add 1.1.1.1 255.255.255.255
+no shut

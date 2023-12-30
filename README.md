@@ -35,13 +35,13 @@ z.z.z.z
 Add the command for which output is needed to 'verification' file. The same command can be used to verify the configuration before and after making the changes
 e.g. To see list of users added on the device
 ```commandline
-sh run | i user
+sh ip int br | i Loo
 ```
 
 add the command for configuration
 ```commandline
 int loo 0
-ip add 1.1.1.1
+ip add 1.1.1.1 255.255.255.255
 no shut
 ```
 

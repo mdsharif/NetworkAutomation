@@ -1,0 +1,54 @@
+Before:
+Device: R1, IP: 12.1.1.101, Command Executed: sh ip int br | i Loo
+
+--------------------------------------------------------------------------------
+Configuring...:
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int loo 0
+R1(config-if)#ip add 1.1.1.1 255.255.255.255
+R1(config-if)#no shut
+R1(config-if)#end
+R1#
+--------------------------------------------------------------------------------
+After:
+Device: R1, IP: 12.1.1.101, Command Executed: sh ip int br | i Loo
+Loopback0              1.1.1.1         YES manual up                    up      
+--------------------------------------------------------------------------------
+################################################################################
+Before:
+Device: R2, IP: 12.1.1.102, Command Executed: sh ip int br | i Loo
+
+--------------------------------------------------------------------------------
+Configuring...:
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#int loo 0
+R2(config-if)#ip add 1.1.1.1 255.255.255.255
+R2(config-if)#no shut
+R2(config-if)#end
+R2#
+--------------------------------------------------------------------------------
+After:
+Device: R2, IP: 12.1.1.102, Command Executed: sh ip int br | i Loo
+Loopback0              1.1.1.1         YES manual up                    up      
+--------------------------------------------------------------------------------
+################################################################################
+Before:
+Device: R3, IP: 12.1.1.103, Command Executed: sh ip int br | i Loo
+
+--------------------------------------------------------------------------------
+Configuring...:
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#int loo 0
+R3(config-if)#ip add 1.1.1.1 255.255.255.255
+R3(config-if)#no shut
+R3(config-if)#end
+R3#
+--------------------------------------------------------------------------------
+After:
+Device: R3, IP: 12.1.1.103, Command Executed: sh ip int br | i Loo
+Loopback0              1.1.1.1         YES manual up                    up      
+--------------------------------------------------------------------------------
+################################################################################
