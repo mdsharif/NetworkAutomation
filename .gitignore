@@ -1,7 +1,7 @@
 test.py
 __pycache__
+config
+cred.py
+device-list.txt
 logs
 verification
-device-list.txt
-config
-cred
