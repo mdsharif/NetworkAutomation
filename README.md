@@ -7,8 +7,11 @@ As on Dec-23, it can be used only for Cisco Devices.
 
 ## Features
 Automatically decides whether it requires to generate output or to configure any network devices
+
 Summary of the actions will be shown on command line
+
 Automatically captures the snap of the required section before and after configuration and saves it in a unique filed stored in directory 'log'.
+
 A file named 'log' will be generated each time the scripts run which will contains all the actions performed on the devices
 
 
@@ -47,3 +50,15 @@ no shut
 
 
 Run Main.py
+
+<br><br>
+#### Features to be added later
+Automatic backup before making any changes
+<br>
+Saving configuration after making changes
+<br>
+Take the input of credentials on the go instead of saving it in the file
+<br>
+Read data from excel which contains, unique credential for each device and then run specific command mentioned in the column for that specific device
+<br>
+More to be added...
